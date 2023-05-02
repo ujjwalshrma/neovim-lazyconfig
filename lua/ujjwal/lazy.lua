@@ -44,7 +44,6 @@ local plugins = {
         opts = {
             options = {
                 icons_enabled = false,
-                theme = 'vscode',
                 component_separators = '|',
                 section_separators = '',
             },
@@ -90,7 +89,8 @@ local plugins = {
     },
     {
         'gpanders/editorconfig.nvim'
-    }
+    },
+    { 'github/copilot.vim' }
 }
 
 local opts = {}
