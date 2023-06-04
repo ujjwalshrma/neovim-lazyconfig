@@ -1,10 +1,10 @@
-vim.opt.guifont = { "Hack Nerd Font", ":h11" }
+vim.opt.guifont = { "Dank Mono", ":h14" }
 
 if vim.g.neovide then
-    vim.g.neovide_remember_window_size = true
-    vim.g.neovide_transparency = 0.9
+    vim.g.neovide_transparency = 1.0
     vim.g.neovide_refresh_rate = 144
     vim.g.neovide_scale_factor = 1.0
+    vim.g.neovide_remember_window_size = true
 end
 
 --no comments on next line
