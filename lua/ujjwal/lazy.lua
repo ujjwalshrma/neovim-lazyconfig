@@ -39,6 +39,12 @@ local plugins = {
         end
     },
     {
+        'numToStr/Comment.nvim',
+        config = function()
+            require("Comment").setup()
+        end
+    },
+    {
         'nvim-lualine/lualine.nvim',
         -- See `:help lualine.txt`
         opts = {
@@ -55,7 +61,9 @@ local plugins = {
         priority = 1000,
         config = function()
             require('rose-pine').setup({
-                variant = 'main'
+                variant = 'main',
+                disable_backround = false,
+                disable_float_background = false,
             })
 
             vim.cmd.colorscheme 'rose-pine'
