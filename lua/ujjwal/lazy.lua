@@ -39,6 +39,12 @@ local plugins = {
         end
     },
     {
+        'numToStr/Comment.nvim',
+        config = function()
+            require("Comment").setup()
+        end
+    },
+    {
         'nvim-lualine/lualine.nvim',
         -- See `:help lualine.txt`
         opts = {
@@ -46,19 +52,28 @@ local plugins = {
                 icons_enabled = false,
                 component_separators = '|',
                 section_separators = '',
+                theme = 'dracula-nvim',
             },
         },
     },
+    -- {
+    --     'rose-pine/neovim',
+    --     name = 'rose-pine',
+    --     priority = 1000,
+    --     config = function()
+    --         require('rose-pine').setup({
+    --             variant = 'main'
+    --         })
+    --
+    --         vim.cmd.colorscheme 'rose-pine'
+    --     end,
+    -- },
     {
-        'rose-pine/neovim',
-        name = 'rose-pine',
+        'Mofiqul/dracula.nvim',
+        name = 'dracula',
         priority = 1000,
         config = function()
-            require('rose-pine').setup({
-                variant = 'main'
-            })
-
-            vim.cmd.colorscheme 'rose-pine'
+            vim.cmd.colorscheme 'dracula'
         end,
     },
     {
