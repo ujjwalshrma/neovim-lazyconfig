@@ -52,7 +52,7 @@ local plugins = {
                 icons_enabled = false,
                 component_separators = '|',
                 section_separators = '',
-                theme = 'dracula-nvim',
+                theme = 'solarized',
             },
         },
     },
@@ -69,13 +69,28 @@ local plugins = {
     --     end,
     -- },
     {
-        'Mofiqul/dracula.nvim',
-        name = 'dracula',
+        "ishan9299/nvim-solarized-lua",
+        name = 'solarized',
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme 'dracula'
+            vim.cmd.colorscheme 'solarized'
         end,
     },
+    -- {
+    --     'Mofiqul/dracula.nvim',
+    --     name = 'dracula',
+    --     priority = 1000,
+    --     config = function()
+    --         vim.cmd.colorscheme 'dracula'
+    --         require('dracula').setup({
+    --             variant = 'main',
+    --             disable_backround = false,
+    --             disable_float_background = false,
+    --         })
+    --
+    --         vim.cmd.colorscheme 'dracula'
+    --     end,
+    -- },
     {
         'VonHeikemen/lsp-zero.nvim',
         dependencies = {
