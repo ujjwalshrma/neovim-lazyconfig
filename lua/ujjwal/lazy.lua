@@ -52,45 +52,22 @@ local plugins = {
                 icons_enabled = false,
                 component_separators = '|',
                 section_separators = '',
-                theme = 'solarized',
+                theme = 'rose-pine',
             },
         },
     },
-    -- {
-    --     'rose-pine/neovim',
-    --     name = 'rose-pine',
-    --     priority = 1000,
-    --     config = function()
-    --         require('rose-pine').setup({
-    --             variant = 'main'
-    --         })
-    --
-    --         vim.cmd.colorscheme 'rose-pine'
-    --     end,
-    -- },
     {
-        "ishan9299/nvim-solarized-lua",
-        name = 'solarized',
+        'rose-pine/neovim',
+        name = 'rose-pine',
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme 'solarized'
+            require('rose-pine').setup({
+                variant = 'main'
+            })
+
+            vim.cmd.colorscheme 'rose-pine'
         end,
     },
-    -- {
-    --     'Mofiqul/dracula.nvim',
-    --     name = 'dracula',
-    --     priority = 1000,
-    --     config = function()
-    --         vim.cmd.colorscheme 'dracula'
-    --         require('dracula').setup({
-    --             variant = 'main',
-    --             disable_backround = false,
-    --             disable_float_background = false,
-    --         })
-    --
-    --         vim.cmd.colorscheme 'dracula'
-    --     end,
-    -- },
     {
         'VonHeikemen/lsp-zero.nvim',
         dependencies = {
@@ -119,7 +96,6 @@ local plugins = {
     {
         'gpanders/editorconfig.nvim'
     },
-    { 'github/copilot.vim' },
     {
         'lewis6991/gitsigns.nvim',
         config = function()

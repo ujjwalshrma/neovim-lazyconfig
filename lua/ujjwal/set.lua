@@ -1,4 +1,4 @@
-vim.opt.guifont = { "Dank Mono", ":h14" }
+vim.opt.guifont = { "JetBrainsMono NF", ":h11" }
 
 if vim.g.neovide then
     vim.g.neovide_transparency = 1.0
