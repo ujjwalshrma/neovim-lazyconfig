@@ -1,15 +1,13 @@
 vim.opt.guifont = { "JetBrainsMono NF", ":h11" }
 
 if vim.g.neovide then
-    vim.g.neovide_transparency = 1.0
-    vim.g.neovide_refresh_rate = 144
-    vim.g.neovide_scale_factor = 1.0
-    vim.g.neovide_remember_window_size = true
+  vim.g.neovide_transparency = 0.7
+  vim.g.neovide_refresh_rate = 144
 end
 
 --no comments on next line
 vim.cmd [[
-    au FileType * set fo-=c fo-=r fo-=o
+au FileType * set fo-=c fo-=r fo-=o
 ]]
 
 --basic neovim setup
@@ -18,9 +16,9 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
