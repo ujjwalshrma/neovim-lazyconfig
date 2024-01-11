@@ -55,49 +55,49 @@ local plugins = {
         icons_enabled = false,
         component_separators = '|',
         section_separators = '',
-        theme = 'rose-pine',
+        theme = 'vscode',
       },
     },
   },
-  -- {
-  --   'Mofiqul/vscode.nvim',
-  --   name = 'vscode',
-  --   priority = 1000,
-  --   config = function()
-  --     require('vscode').setup({
-  --       -- Alternatively set style in setup
-  --       -- style = 'light'
-  --
-  --       -- Enable transparent background
-  --       -- transparent = true,
-  --
-  --       -- Disable nvim-tree background color
-  --       disable_nvimtree_bg = true,
-  --
-  --       -- Override colors (see ./lua/vscode/colors.lua)
-  --       color_overrides = {
-  --         vscLineNumber = '#FFFFFF',
-  --       },
-  --     })
-  --
-  --     vim.cmd.colorscheme 'vscode'
-  --   end
-  -- },
   {
-    'rose-pine/neovim',
-    name = 'rose-pine',
+    'Mofiqul/vscode.nvim',
+    name = 'vscode',
     priority = 1000,
     config = function()
-      require('rose-pine').setup({
-        variant = 'main',
-        disable_background = false,
-        disable_italics = true,
+      require('vscode').setup({
+        -- Alternatively set style in setup
+        -- style = 'light'
 
+        -- Enable transparent background
+        transparent = true,
+
+        -- Disable nvim-tree background color
+        disable_nvimtree_bg = true,
+
+        -- Override colors (see ./lua/vscode/colors.lua)
+        color_overrides = {
+          vscLineNumber = '#FFFFFF',
+        },
       })
 
-      vim.cmd.colorscheme 'rose-pine'
-    end,
+      vim.cmd.colorscheme 'vscode'
+    end
   },
+  -- {
+  --   'rose-pine/neovim',
+  --   name = 'rose-pine',
+  --   priority = 1000,
+  --   config = function()
+  --     require('rose-pine').setup({
+  --       variant = 'main',
+  --       disable_background = false,
+  --       disable_italics = true,
+  --
+  --     })
+  --
+  --     vim.cmd.colorscheme 'rose-pine'
+  --   end,
+  -- },
   {
     'VonHeikemen/lsp-zero.nvim',
     dependencies = {

@@ -1,7 +1,7 @@
-vim.opt.guifont = { "FiraMono Nerd Font", ":h12" }
+vim.opt.guifont = { "FiraMono Nerd Font Medium", ":h12" }
 
 if vim.g.neovide then
-  vim.g.neovide_transparency = 1.0
+  vim.g.neovide_transparency = 0.7
   vim.g.neovide_refresh_rate = 144
 end
 
