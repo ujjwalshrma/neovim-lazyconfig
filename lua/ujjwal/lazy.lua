@@ -33,8 +33,6 @@ local plugins = {
     end
   },
   { 'neovim/nvim-lspconfig', },
-  { 'jose-elias-alvarez/null-ls.nvim' },
-  { 'MunifTanjim/prettier.nvim' },
   {
     'tpope/vim-fugitive',
     config = function()
@@ -69,7 +67,7 @@ local plugins = {
         -- style = 'light'
 
         -- Enable transparent background
-        transparent = true,
+        -- transparent = true,
 
         -- Disable nvim-tree background color
         disable_nvimtree_bg = true,
